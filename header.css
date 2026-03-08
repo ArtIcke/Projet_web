@@ -1,0 +1,47 @@
+.header {   
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 20px;
+}
+
+.top { 
+    font-size: 30px;
+    font-weight: bold;
+    color: #25912a;
+}
+.redirection {
+    justify-content: center;
+    background-color: #25912a;
+    display: flex;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+#acceuil, #etude, #centreInteret, #projetsPerso, #experiencesPerso, #contact {
+    margin-right: 50px;
+    margin-left: 50px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    font-weight: lighter;
+}
+
+#acceuil_actif, #etude_actif, #centreInteret_actif, #projetsPerso_actif, #experiencesPerso_actif {
+    margin-right: 50px;
+    background-color: #5ec563;
+    margin-left: 50px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    font-weight: lighter;
+}
+
+
+#etude:hover, #centreInteret:hover, #projetsPerso:hover, #experiencesPerso:hover, #contact:hover, #acceuil:hover {
+    background-color: #18701c;
+}
+

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang = 'fr'>
+    <head>
+        <meta charset="UTF-8">
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1.0"> 
+        <!-- 'viewport' → adapte la taille de la page en fonction de l'ecran de l'utilisateur-->
+        <title>
+            Mes études
+        </title>
+        <link rel =  "shortcut icon" href = "icon_ballon_volley.png">
+        <link rel = "stylesheet" href = "header.css">
+        <link rel = "stylesheet" href = "Body.css">
+        <link rel = "stylesheet" href = "bottom.css">
+    </head>
+    <body class = "Page_etude">
+        <div class = "Page_Entiere">
+            <div class = "header">
+                <div class = "top">
+                    <h1>
+                        Benjamin BOUVIER
+                    </h1>
+                </div>
+                <div class = "redirection">
+                        <p >
+                            <a href = "Page_Accueil.html" id = "acceuil">
+                                Page d'acceuil
+                            </a>
+                        </p>
+                        <p >
+                            <a href = "Page_etude.html" id = "etude">
+                                Mes études
+                            </a>
+                        </p>
+                        <p >
+                            <a href = "Page_Centres_Interes.html" id = "centreInteret_actif">
+                                Mes centres d'intérets
+                            </a>
+                        </p>
+                        <p >
+                            <a href = "Page_Projet.html" id = "projetsPerso">
+                                Mes projets personnels
+                            </a>
+                        </p>
+                        <p >
+                            <a href = "Page_experiences.html" id = "experiencesPerso">
+                                Mes expériences personnelles
+                            </a>
+                        </p>
+                        <p >
+                            <a href = "mailto:benjaminbouvier35@gmail.com" id = "contact">
+                                Me contacter
+                            </a>
+                        </p>
+                </div>
+            </div>
+            <div class = "contenu">
+                <p id = "introdution_centres_interet">
+                    Je vais ici vous présenter mes différents centres d'intérets.
+                    <br>
+                    J'ai toujours beaucoup aimé les jeux vidéos et le sport.
+                </p>
+                <div class = "Description_interet_1">
+                    <div class = "Left_centre_interet_1">
+                        <img src = "photo_jeux_videos.png" width="400">
+                    </div>
+                    <div class = "Right_centre_interet_1">
+                        <p>
+                            J'ai toujours été passionné par l'informatique, et particulièrement les Jeux Videos.
+                            <br><br>
+                            J'y ai toujours joué, que ce soit sur ma tablette étant petit, sur mes consoles ou sur mon ordinateur.
+                            <br>
+                            Aujourd'hui, je joue beaucoup à des jeux de stratégies comme Valorant, des jeux de plateformes comme Céleste
+                            ou encore des jeux de types bac à sables tel que Minecraft.
+                            <br><br>
+
+                            <button type="button" id="button_decompte_valorant" onclick="calculerTempsValorant()">
+                                Depuis quand Valorant est-il sorti ?
+                            </button>
+                            <script class = "script_temps_valorant">
+                                function calculerTempsValorant() {
+                                // 1. Date de sortie de Valorant (2 juin 2020)
+                                const dateSortie = new Date('2020-06-02T00:00:00');
+                                // 2. Date actuelle
+                                const maintenant = new Date();
+
+                                // 3. Calcul de la différence en millisecondes
+                                let difference = maintenant - dateSortie;
+
+                                // 4. Conversion en jours, heures, minutes
+                                const annee = Math.floor(difference / (1000 * 60 * 60 * 24 * 365));
+                                difference -= annee * (1000 * 60 * 60 * 24 * 365);
+                                
+                                const jours = Math.floor(difference / (1000 * 60 * 60 * 24));
+                                difference -= jours * (1000 * 60 * 60 * 24);
+
+                                const heures = Math.floor(difference / (1000 * 60 * 60));
+                                difference -= heures * (1000 * 60 * 60);
+
+                                const minutes = Math.floor(difference / (1000 * 60));
+
+                                // 5. Affichage du résultat
+                                document.getElementById('consultation').innerHTML = 
+                                    `Valorant est sorti il y a : ${annee} ans, ${jours} jours, ${heures} heures et ${minutes} minutes.`;
+
+                                // enlever le boutton
+                                document.getElementById("button_decompte_valorant").style.display = "none";
+                                }
+                            </script>
+                            <p id="consultation"></p>
+                            <br>
+                            Tous ces jeux m'ont appris beaucoup de compétences importantes dans la vie de tous les jours. Comme la 
+                            communication, la patience, la détermination, ou encore l'imagination.
+                        </p>
+                    </div>
+                </div>
+                <p id = "transition">
+                    Mais comme les jeux vdéos ne permettent pas de se dépenser et faire du sport, c'est pourquoi le sport est aussi 
+                    une partie importante de ma vie.
+                </p>
+                <div class = "Description_interet_2">
+                    <div class = "Left_centre_interet_2">
+                        <p>
+                            Depuis mon plus jeune age, j'ai toujours adoré pratiquer une activité sportive.
+                            <br><br>
+                            J'ai commencé avec du Judo étant tout petit, puis j'ai testé beaucoup de sport différents,comme le badminton, 
+                            le basket, le tir à l'arc en passant par du ping pong.
+                            <br>
+                            Mais aujourd'hui, je me concentre d'avantage sur le Volley, ainsi que la calisthénie.
+                        </p>
+                    </div>
+                    <div class = "Right_centre_interet_2">
+                        <img src = "photo_volley.jpg" width="400">
+                    </div>
+                </div>
+            </div>
+        <div class = "Bottom">
+        </div>
+    </body>
+</html>

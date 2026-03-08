@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang = 'fr'>
+    <head>
+        <meta charset="UTF-8">
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1.0"> 
+        <!-- 'viewport' → adapte la taille de la page en fonction de l'ecran de l'utilisateur-->
+        <title>
+            Mes études
+        </title>
+        <link rel =  "shortcut icon" href = "icon_ballon_volley.png">
+        <link rel = "stylesheet" href = "header.css">
+        <link rel = "stylesheet" href = "Body.css">
+        <link rel = "stylesheet" href = "bottom.css">
+    </head>
+    <body class = "Page_etude">
+        <div class = "Page_Entiere">
+            <div class = "header">
+                <div class = "top">
+                    <h1>
+                        Benjamin BOUVIER
+                    </h1>
+                </div>
+                <div class = "redirection">
+                        <p >
+                            <a href = "Page_Accueil.html" id = "acceuil">
+                                Page d'accueil
+                            </a>
+                        </p>
+                        <p >
+                            <a href = "Page_etude.html" id = "etude_actif">
+                                Mes études
+                            </a>
+                        </p>
+                        <p >
+                            <a href = "Page_Centres_Interes.html" id = "centreInteret">
+                                Mes centres d'intérets
+                            </a>
+                        </p>
+                        <p >
+                            <a href = "Page_Projet.html" id = "projetsPerso">
+                                Mes projets personnels
+                            </a>
+                        </p>
+                        <p >
+                            <a href = "Page_experiences.html" id = "experiencesPerso">
+                                Mes expériences personnelles
+                            </a>
+                        </p>
+                        <p >
+                            <a href = "mailto:benjaminbouvier35@gmail.com" id = "contact">
+                                Me contacter
+                            </a>
+                        </p>
+                </div>
+            </div>
+            <div class = "presentation">
+                <p id = "introduction_lycee">
+                    J'ai réalisé mon Baccaleuréat général au lycée Victor et Hélène Basch, à Rennes.
+                    <br>
+                    Voici le site web de mon lycée si vous avez besoin d'en savoir plus :
+                </p>
+                <iframe src = "https://lycee-basch.fr" height = 300px width = "70%" id = "Iframe_VHB"></iframe>
+                <p id = specialites>
+                    Dans mon bac général, j'ai pris les spécalités Mathématiqueset Numérique et Sciences de l'Informatique (NSI).
+                    <br>
+                    J'avais aussi la spécialité Physique-Chimie en première, mais je l'ai laché afin de farder la NSI, ce qui s'oriente
+                    plus vers mon projetprofessionnel, Ingénieur en Cybersécurité Logicielle.
+                    <br>
+                    Lors de mon année de terminal, j'avais aussi pris l'option mathématiques expertes afin de progresser au maximum dans
+                    ce domaine que j'apprécie beaucoup.
+                </p>
+
+                <p id = "texte_cache" style = "display: none;">
+                    Admis mention Bien, sectione européenne anglais
+                </p>
+                <script>
+                function myFonction(){
+                    // 'document.getElementById' : recpere et modifie un objet
+                    document.getElementById("texte_cache").style.display = "block";
+                    document.getElementById("texte_cache").innerHTML = "Admis mention Bien, section européenne anglais";
+                    document.getElementById("button_resultat").style.display = "none";
+                    
+                    //Inner : engendre du texte
+                }
+                </script>
+                <button type = "button" onclick = "myFonction()" id = "button_resultat">
+                    Voici mes résultats du Bac
+                </button>
+                </div>
+
+
+
+
+
+        </div>
+        <div class = "Bottom">
+        </div>
+    </body>
+</html>

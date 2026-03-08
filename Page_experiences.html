@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang = 'fr'>
+    <head>
+        <link rel = "stylesheet" href = "header.css">
+        <link rel = "stylesheet" href = "Body.css">
+        <link rel = "stylesheet" href = "bottom.css">
+        <link rel =  "shortcut icon" href = "icon_ballon_volley.png">
+        <meta charset="UTF-8">
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1.0"> 
+        <title>
+            Page d'acceuil
+        </title>
+        <link rel =  "shortcut icon" href = "ensibs_favicon.png">
+        <script src = "Script.js" defer></script>
+    </head>
+    <body class = "Page_acceuil">
+        <div class = "Page_Entiere">
+            <div class = "header">
+                <div class = "top">
+                    <h1>
+                        Benjamin BOUVIER
+                    </h1>
+                </div>
+                <div class = "redirection">
+                        <p >
+                            <a href = "Page_Accueil.html" id = "acceuil">
+                                Page d'accueil
+                            </a>
+                        </p>
+                        <p >
+                            <a href = "Page_etude.html" id = "etude">
+                                Mes études
+                            </a>
+                        </p>
+                        <p >
+                            <a href = "Page_Centres_Interes.html" id = "centreInteret">
+                                Mes centres d'intérets
+                            </a>
+                        </p>
+                        <p >
+                            <a href = "Page_Projet.html" id = "projetsPerso">
+                                Mes projets personnels
+                            </a>
+                        </p>
+                        <p >
+                            <a href = "Page_experiences.html" id = "experiencesPerso_actif">
+                                Mes expériences personnelles
+                            </a>
+                        </p>
+                        <p >
+                            <a href = "mailto:benjaminbouvier35@gmail.com" id = "contact">
+                                Me contacter
+                            </a>
+                        </p>
+                </div>
+                <div class = container_experiences>
+                    <h1 style = "text-align: center;">
+                        Mes expériences Personnelles : 
+                    </h1>
+                    <p style = "text-align: center;"> 
+                        J'ai pu réaliser de nombreuses expériences durant mes années de collège et lycée.
+                    </p>
+                    <img id = "monImage" src = "photo_experiences.jpg" alt = "experience" width = "400">
+                    <p>
+                        <button class = "button_experience" type = button onclick = "experiences('CTF')">
+                            CTF - Passe ton hack d'abord
+                        </button>
+                        <button class = "button_experience" type = button onclick = "experiences('Communication')">
+                            Stage au pole communication
+                        </button>
+                        <button class = "button_experience" type = button onclick = "experiences('volley')">
+                            Coupe de Bretagne M18
+                        </button>
+                    </p>
+                </div>
+            </div>
+            <div class = "Bottom">
+            </div>
+        </div>

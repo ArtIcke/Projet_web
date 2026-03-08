@@ -1,0 +1,204 @@
+body {
+    background-color: white;
+    padding: 0;
+    color: #055e09;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    margin: 20px auto;
+    margin-bottom: 0;
+}
+
+.Description_accueil {
+    display: flex;
+    flex: 1; /* divise la section par 2 */
+    width: 70%;
+    margin: 20px auto;
+}
+
+.Left {
+    width: 30%;
+}
+
+.Right {
+    width: 60%;
+    margin-top: 40px;
+}
+
+.finDescription {
+    width: 70%;
+    margin: 20px auto;
+}
+
+#signature {
+    display: flex;
+    width: 80%;
+    margin: 30px auto;
+}
+
+/* Page etudes*/
+
+#introduction_lycee, #specialites {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 200px; 
+    margin-right: 200px;
+}
+
+#Iframe_VHB {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    background-color: lightgreen;
+    padding: 50px 100px;
+    border-radius: 20px;
+}
+
+#texte_cache {
+    display: none;
+    text-align: center;
+    margin: 0 100px;
+    margin-bottom: 50px;
+    border-radius: 50px;
+    font-size : 35px;
+    padding : 35px;
+    color : #024105;
+    background-color : lightgreen;
+}
+
+#button_resultat {
+    display: block;
+    padding: 20px;
+    margin-left: 100px; 
+    margin-bottom: 50px;
+    border-radius: 100px;
+    background-color: #25912a;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    color: white;
+    border-width: 3px;
+}
+
+#button_resultat:hover {
+    background-color: #055e09;
+}
+
+/* Page centres d'interets */
+
+.Description_interet_1, .Description_interet_2 {
+    display: flex;
+    flex: 1; /* divise la section par 2 */
+    width: 70%;
+    margin: 20px auto;
+}
+
+
+.Left_centre_interet_1 {
+    width: 40%;
+    margin-top: 10px;
+}
+
+.Right_centre_interet_1 {
+    width: 60%;
+}
+
+.Left_centre_interet_2 {
+    width: 80%;
+    margin-top: 10px;
+}
+
+.Right_centre_interet_2 {
+    width: 40%;
+}
+
+#introdution_centres_interet, #transition {
+    text-align: center;
+    margin: 0 100px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    border-radius: 50px;
+    padding : 15px;
+    color : #024105;
+    background-color : lightgreen;
+}
+
+#button_decompte_valorant {
+    display: block;
+    padding: 20px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    margin-left: 200px;
+    border-radius: 100px;
+    background-color: #25912a;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    color: white;
+    border-width: 3px;
+}
+
+/* Page projets personnels */
+
+.section_photo {
+    display: flex;
+    justify-content: center; 
+    gap: 40px; 
+    padding: 40px;
+    flex-wrap: wrap; 
+}
+
+.container_photo {
+    width: 300px;
+    height: 220px;
+}
+
+.container_photo img { 
+    width: 100%;
+    height: 100%;
+}
+
+.description_section {
+    display: none; /* Cache la boîte par défaut */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 30px auto;
+    padding: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 18px;
+    background-color: lightgreen;
+    border-radius: 10px;
+    max-width: 800px;
+    color: #055e09;
+}
+
+/* Page experience */
+
+#monImage {
+    width: 500px;  
+    height: 350px; 
+    object-fit: cover; 
+    border-radius: 15px;
+    display: block;
+    margin: 20px auto; 
+}
+
+.button_experience {
+    margin : 10px 60px ;
+    cursor : pointer;
+    background-color: rgb(63, 177, 63);
+    color: white;
+    border: 3px solid black;
+    border-radius : 100px;
+    padding: 15px 40px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    font-family :'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    box-shadow: 0px 10px 15px green;
+}
+
+
+.button_experience:hover {
+    background-color: green;
+}
