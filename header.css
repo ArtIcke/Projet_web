@@ -9,11 +9,11 @@
 .top { 
     font-size: 30px;
     font-weight: bold;
-    color: #25912a;
+    color: #132a13;
 }
 .redirection {
     justify-content: center;
-    background-color: #25912a;
+    background-color: #4f772d;
     display: flex;
     overflow: hidden;
     text-decoration: none;
@@ -31,7 +31,7 @@
 
 #acceuil_actif, #etude_actif, #centreInteret_actif, #projetsPerso_actif, #experiencesPerso_actif {
     margin-right: 50px;
-    background-color: #5ec563;
+    background-color: #90a955;
     margin-left: 50px;
     text-align: center;
     text-decoration: none;
@@ -42,6 +42,6 @@
 
 
 #etude:hover, #centreInteret:hover, #projetsPerso:hover, #experiencesPerso:hover, #contact:hover, #acceuil:hover {
-    background-color: #18701c;
+    background-color: #132a13;
 }
 
